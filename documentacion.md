@@ -450,3 +450,146 @@ En cuanto al diseño gráfico, aunque es una misión emocionante, nos vamos a li
 Bootswatch es una biblioteca de temas (themes) para Bootstrap, un popular framework de desarrollo web.
 
 Al utilizar Bootswatch, puedes cambiar fácilmente la apariencia de tu proyecto de Bootstrap simplemente importando los archivos CSS correspondientes al tema deseado. Esto te permite ahorrar tiempo y esfuerzo al no tener que crear los estilos desde cero.
+
+# Hist5 - Entorno de desarrollo
+“Dame seis horas para cortar un árbol y pasaré las primeras cuatro afilando el hacha.” – Abraham Lincoln
+
+Si queremos ser eficientes en la creación de aplicaciones web, lo mejor es empezar por configurar bien nuestro entorno de desarrollo. Para ello vamos a instalar/configurar las siguientes herramientas:
+
+Un buen software para escribir nuestro código. En nuestro caso usaremmos el programa VSCode de Microsoft.
+Instalación del software para el control de versiónes. Nosotros instalaremos GIT.
+Una aplicación web para sincronizar nuestro repositorio en la nube. En nuestro caso será GitHub.
+## 1. VSCode
+Sin duda, en le momento de escribir esta documentación, el rey de los IDs es, sin duda, Visual Studio Code (VSCode).
+
+![Ejemplo de imagen](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png)
+
+VSCode es un programa muy útil para escribir código. Es como una navaja suiza para los desarrolladores. Te permite editar y organizar tus archivos de código de manera fácil y rápida. Además, tiene un montón de extensiones y herramientas fantásticas que te facilitan la vida, como autocompletado, depuración y control de versiones. En resumen, es como el mejor amigo de un programador, siempre dispuesto a ayudarte a escribir código de manera eficiente.
+
+Os hago un resumen de algunas aspectos que debes tener en cuenta a la hora de instalar y configurar VSCode, y te pondré información ampliada ya que es un tema muy trillado en internet:
+
+### 1.1. Descarga e instala VSCode
+Puedes encontrar la versión oficial de vscode aquí
+
+### 1.2. Elige el tema que más te guste.
+Puedes tunear tu VSCode instalando diferentes temas. Para ello:
+
+Desde el buscador de extensiones (ctrl + mayus + X) escribe el nombre del tema que quieres instalar.
+Haz clic en instalar extensión.
+Desde el icono de configuración de vscode (la tuerquecita de abajo a la izquierda) selecciona 'Temas > Tema de color'
+Selecciona el tema que has instalado y... ¡ya lo tienes!
+
+### 1.3. Instala un tema de iconos, por ejemplo VSCode Icons o Material Icon
+Para instalar los iconos el proceso es el mismo:
+
+Desde el buscador de extensiones escribe el nombre del tema de iconos
+En configuración, selecciona 'Tema > Tema de icono de archivo' y busca el tema instalado.
+Ahora verás que en la columna de la izquierda, cada archivo tiene un icono diferente en función de su extensión: html, css, etc.
+### 1.4. Extensiones
+Con las extensiones puedes aumentar la potencia y mejorar tu flujo de trabajo.
+
+#### Prettier
+Una de las extensiones que te recomiendo sí o sí es 'Prettier'. Esta extensión se va a encargar de formatear tu código HTML y CSS port tí, respetando las identaciones. El proceso para instalar esta extensión es muy simple, solo tienes que buscar la extensión en el buscador y darle a instalar.
+
+#### Live Server
+Otra extensión imprescindible para nosotros es Live Server. Mediante esta extensión podremos tener un servidor virtual que mostrará el resultado de nuestro trabajo en un navegador, con la ventaja de que la vista se irá actualizando conforme vamos modificando el código.
+
+Existen infinidad de extensiones para VSCode Aquí puedes ver un ejemplo de mi entorno. Utilizo el tema Night Owl y los iconos de VSCode Icons. Fijate que el código html está formateado con Prettier
+![Ejemplo de imagen](https://carrebola.github.io/vanillaPill/assets/images/entornovscode-80ba59cf4e146584bd91bdc2ddc30ba1.png)
+De momento, con esto es suficiente para comenzar a trabajar en el desarrollo de los prototipos html y css. Más adelante acabaremos de configurar nuestro entorno para trabajar con NodeJS y otras herramientas que nos ayudarán a programar de forma más eficiente.
+
+## 2. Control de versiones - Git
+Para el control de versiones vamos a instalar y configurar Git. Aunque seguro que a estas alturas ya sabes qué es Git, pero deja que te refresque algunas ideas importantes:
+
+INFO
+✔ Git es como un superpoderoso control de versiones para tu código. Imagina que estás escribiendo un ensayo importante y cada vez que haces cambios guardas una nueva versión en diferentes archivos, como "ensayo_v1", "ensayo_v2" y así sucesivamente. Git hace algo similar pero para tu código.
+
+✔ Con Git, puedes guardar diferentes versiones de tu proyecto a medida que avanzas. Esto significa que si cometes un error o quieres volver a una versión anterior, ¡es pan comido! Git te permite viajar en el tiempo y regresar a cualquier punto en la historia de tu proyecto.
+
+✔ Pero eso no es todo. Git también es excelente para trabajar en equipo. Puedes colaborar con otros programadores sin pisar los pies de nadie. Cada persona puede trabajar en su propia versión del proyecto y luego combinar los cambios de todos de manera ordenada.
+
+✔ Además, Git hace que compartir tu código sea súper fácil. Puedes subir tu proyecto a un repositorio en línea (como GitHub o GitLab) y otras personas pueden descargarlo y contribuir. Incluso puedes colaborar con desarrolladores de todo el mundo en proyectos de código abierto.
+
+Aprender git es muy importante para un desarrollador web. Por suerte lo vas a estudiar (si no lo has hecho ya) en el ciclo de DAW. De todas formas te dejo un enlace con más información que te será muy util para entender conceptos como que es una rama, como subir ramas al repositorio, clonarlas, sincronizarlas etc:
+
+
+Vamos a instalar (si aun no está instalado) Git. Para ello:
+
+Descarga su última versión de la web oficial: Download Git.
+
+Instala en tu ordenador el software.
+
+Configura git para tu usuario:
+
+Lo primero que deberás hacer cuando instales Git es establecer tu nombre de usuario y dirección de correo electrónico. Esto es importante porque los "commits" de Git usan esta información, y es introducida de manera inmutable en los commits que envías:
+
+  $ git config --global user.name "John Doe"
+  $ git config --global user.email johndoe@example.com  
+
+Sólo necesitas hacer esto una vez si especificas la opción --global, ya que Git siempre usará esta información para todo lo que hagas en ese sistema
+
+## 3. Repositorio en linea - Github
+Ahora que tenemos Git instalado en nuestro ordenador, vamos crearnos una cuenta en Github para poder sincronizar todo nuestro trabajo en la nube.
+En primer lugar vamos a acceder github.com
+Crea una cuenta e inicia sesión.
+Ahora vamos a crear un proyecto de prueba con vscode, craremos un repositorio y lo sincronizaremos con github.
+
+## Configurando entorno y subiendo página de pruebas
+Vamos a ver un ejemplo de todo el proceso. La idea es instalar y configurar nuestro entorno de desarrollo para después crear una página web, guardar una versión en git, subirla a github y publicarla en github pages. Vamos a por ello:
+
+Instala VSCode si no la has hecho aún.
+
+Configúralo con el tema que más te guste, los iconos que decidas e instala las extensiones live server y prettier.
+
+Crea una carpeta en tu ordenador con nombre pruebas
+
+Abre VSCode y arrastra la carpeta dentro de la ventana central.
+
+Crea un archivo con nombre index.html (algo básico, con un h1 y poco más).
+
+Muestra el resultado en el navegador utilizando live server.
+
+Configura prettier para que al guardar con ctrl + S se aplique formateado de tu código. Pruebalo.
+
+Instala Git si no lo has hecho aún.
+
+Configura tu usuario o confirma que ya está configurado.
+
+Haz clic en el icono de 'Control de fuente' de tu vscode o pulsa ctrl + Mayus + G
+
+Aparecerá un mensaje que te indica que no tienes repositorio creado, y te dará la opción de crearlo desde aquí. Hazlo
+
+![Ejemplo de imagen](https://carrebola.github.io/vanillaPill/assets/images/pruebas-699477c2eaed5615c35abc13ab591adb.png)
+
+![Ejemplo de imagen](https://carrebola.github.io/vanillaPill/assets/images/confirmgit-05eb2b43bcbe481fd8cec6be0976d4a5.png)
+Escribe un mensaje de inicio de repositorio (por ejemplo 'primer commit de git') y dale a confirmar.
+
+Ahora te pedirá si quieres publicar la rama ('Branch'). Dile que sí. Al hacer clic te preguntará qué nombre quieres para el repositorio y si quieres que sea privado o público. Por defecto, el nombre del repositorio coincide con el nombre de la carpeta de tu proyecto, pero puedes cambiarlo si lo deseas. Para esta prueba haremos que nuestro repositorio sea público.
+
+Si es la primera vez que conectas tu VSCode con github te pedirá que lo sincronices. Utiliza la opción de confirmar a través de VSCode.
+
+Una vez publicado tu archivo en github podrás ver, en tu página de github (por ejemplo carrebola.github.com), algo así:
+
+![Ejemplo de imagen](https://carrebola.github.io/vanillaPill/assets/images/github-331ad9adada0e68ee217ed2a11147d31.png)
+Vamos a documentar de forma básica nuestro proyecto prueba. Para ello vamos ahora a crear un archivo readme.md para que github muestre información del proyecto publicado en su pantalla inicial:
+Crea un archivo con nombre readme.md en la raiz de la carpeta del proyecto.
+Escribe dentro un texto descriptivo del proyecto, como por ejemplo:
+
+##### Configurando nuestro entorno de desarrollo
+
+1. Instalación de VSCode
+2. Configurarción de git y github
+3. Pruebas con proyecto
+
+Si abrimos ahora github podemos ver como se muestra esta información en la portada del repositorio de github.
+
+![Ejemplo de imagen](https://carrebola.github.io/vanillaPill/assets/images/pruebamarkdown-e0afca8f47d07e677b84a971c713f4c3.png)
+Para terminar vamos a subir nuestro proyecto a github pages. Para ello:
+Haz clic en Settings (el icono con forma de engranaje de la parte superior)
+Entra en Pages (opción que encontrarás en el menú lateral izquierdo)
+Donde pone Branch selecciona la rama main y haz clic en Save.
+Si todo ha ido bien, la página se está publicando... Espera un minuto y refresca la página con F5
+Ahora puedes ver la url donde se ha publicado tu página. Haz clic en el enlace o en el botón Visit site y podrás ver la web publicada.
+![Ejemplo de imagen](https://carrebola.github.io/vanillaPill/assets/images/githubpages-29b29a98b367965695b01b043cb7c0d2.png)
+
+Y hasta aquí la configuración de nuestro entorno de desarrollo, al menos la versión básica. Más adelante aprenderemos a trabajar con otras herramientas como nodejs, eslint, etc, pero de momento, con este entorno, ya estamos preparados para crear los prototipos en html y css de la primera versión de nuestro proyecto.
