@@ -11,7 +11,7 @@ export default {
         
         <div class="row mt-2">
             <div class="col-12 col-md-4 mb-3">
-                <img src=".images/juego.jpg" alt="" class="img-fluid">
+                <img src="images/juego.jpg" alt="" class="img-fluid">
             </div>
             <div class="col-12 col-md-8">
                 <p>
