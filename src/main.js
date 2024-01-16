@@ -7,6 +7,9 @@ import 'bootstrap'
 // Import our custom CSS
 import './scss/styles.scss'
 
+// Importamos la Función para detectar eventos al cargar las vistas
+import { enrutador } from './componentes/enrutador'
+
 // Importamos la vista por defecto (que será home)
 async function cargarVista () {
   const componente = await import('./vistas/homeVista')
@@ -23,3 +26,7 @@ document.querySelector('header').innerHTML = header.template
 
 // Inyectamos el componente footer
 document.querySelector('footer').innerHTML = footer.template
+
+enrutador.observadorRutas()
+// Cargamos la página home
+window.location = '#/home'
