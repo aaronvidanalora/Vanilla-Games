@@ -76,7 +76,7 @@ const menuUsuario = {
                 data-bs-toggle="modal"
                 data-bs-target="#modalEditarPerfil"
                 >
-Mi perfil
+                Mi perfil
             </a>
           </li>
           <li><hr class="dropdown-divider" /></li>

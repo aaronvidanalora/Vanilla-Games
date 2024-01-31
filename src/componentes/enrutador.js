@@ -11,7 +11,8 @@ export const enrutador = {
     proyectos: import('../vistas/proyectosVista.js'),
     proyectoNuevo: import('../vistas/proyectoNuevoVista.js'),
     proyectoEditar: import('../vistas/proyectoEditarVista.js'),
-    proyectoDetalle: import('../vistas/proyectoDetalleVista.js')
+    proyectoDetalle: import('../vistas/proyectoDetalleVista.js'),
+    404: import('../vistas/404.js')
 
   },
 
