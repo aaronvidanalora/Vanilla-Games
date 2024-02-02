@@ -9,7 +9,6 @@ import './scss/styles.scss'
 
 // Importamos la Función para detectar eventos al cargar las vistas
 import { enrutador } from './componentes/enrutador'
-
 // Importamos la vista por defecto (que será home)
 async function cargarVista () {
   const componente = await import('./vistas/homeVista')

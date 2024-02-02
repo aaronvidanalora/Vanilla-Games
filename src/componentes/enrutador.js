@@ -13,7 +13,6 @@ export const enrutador = {
     proyectoEditar: import('../vistas/proyectoEditarVista.js'),
     proyectoDetalle: import('../vistas/proyectoDetalleVista.js'),
     404: import('../vistas/404.js')
-
   },
 
   // Método que obtiene la ruta del navegador

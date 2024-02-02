@@ -1,3 +1,6 @@
+import { proyectos, perfiles } from '../bd/datosPrueba'
+import { ls } from '../componentes/funciones'
+
 export default {
   template: // html
       `
@@ -125,5 +128,9 @@ export default {
           </div>
       </div>
   </div>
-      `
+      `,
+  script: () => {
+
+  }
+
 }
