@@ -56,3 +56,46 @@ const leerPerfiles = async () => {
 }
 // Ejecutamos la función
 await leerPerfiles()
+
+// Probamos a logearnos
+const login = async () => {
+  try {
+    // USER LOGIN
+    // eslint-disable-next-line no-unused-vars
+    const { data, error } = await supabase.auth.signInWithPassword({
+      email: 'aarooonvl@gmail.com',
+      password: '31122004Aaron'
+    })
+    console.log('login', data)
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+await login()
+
+const getUser = async () => {
+  try {
+    // GET USER
+    const { data: { user } } = await supabase.auth.getUser()
+    console.log('Consultamos datos de usuario con getUser(): ', user)
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+await getUser()
+
+// Probamos a cerrar sesión
+const logout = async () => {
+  try {
+    const { error } = await supabase.auth.signOut()
+    console.log('Sesión cerrada con exito: ')
+  } catch (error) {
+    console.log(error)
+  }
+}
+// Cerramos sesión
+await logout()
+// Probamos a mostrar datos de usuario logueado. Debería darnos null
+await getUser()
