@@ -50,6 +50,7 @@ export class Perfil {
       .from('perfiles')
       .select('*')
       .eq('id', id) // Filtra por el ID especificado
+      .single() // Espera un solo resultado
 
     // Manejo de errores
     if (error) {
@@ -57,16 +58,17 @@ export class Perfil {
     }
 
     // Devuelve una instancia de Perfil con la información obtenida
-    return new Perfil(perfil[0])
+    return new Perfil(perfil)
   }
 
   // Método estático para obtener un perfil por el ID del usuario asociado
-  static async getByUserId (userId) {
+  static async getByUserId (id) {
     // Realiza una consulta para obtener un perfil por el ID de usuario asociado
     const { data: perfil, error } = await supabase
       .from('perfiles')
       .select('*')
-      .eq('user_id', userId) // Filtra por el ID de usuario especificado
+      .eq('user_id', id) // Filtra por el ID de usuario especificado
+      .single()
 
     // Manejo de errores
     if (error) {
@@ -74,7 +76,7 @@ export class Perfil {
     }
 
     // Devuelve una instancia de Perfil con la información obtenida
-    return new Perfil(perfil[0])
+    return new Perfil(perfil)
   }
 
   // Método estático para crear un nuevo perfil
