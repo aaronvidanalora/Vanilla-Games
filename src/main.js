@@ -1,6 +1,6 @@
 import { header } from './componentes/header'
 import { footer } from './componentes/footer'
-
+import { createClient } from '@supabase/supabase-js'
 // Import all of Bootstrap's JS
 import 'bootstrap'
 
@@ -37,7 +37,22 @@ header.script()
 console.log('PRUEBAS SUPABASE')
 
 const supabaseUrl = 'https://dlgnhtzgdglnnizsjixp.supabase.co'
-const supabaseKey = process.env.SUPABASE_KEY
-const supabase = createClient(supabaseUrl, supabaseKey)
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRsZ25odHpnZGdsbm5penNqaXhwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDY4ODUwODgsImV4cCI6MjAyMjQ2MTA4OH0.fDTPVEcyfF3gGoRJvn9iXY3RGH8bUp3w5ieOssMLbQc'
+const supabase = createClient(supabaseUrl, SUPABASE_KEY)
 
 console.log('conexion', supabase)
+// Probamos la api de las tablas
+// función para Leer perfiles
+const leerPerfiles = async () => {
+  try {
+    // eslint-disable-next-line no-unused-vars
+    const { data: perfiles, error } = await supabase
+      .from('perfiles')
+      .select('*')
+    console.log('perfiles', perfiles)
+  } catch (error) {
+    console.log(error)
+  }
+}
+// Ejecutamos la función
+await leerPerfiles()
