@@ -60,7 +60,7 @@ export const perfiles = [
     contraseña: '123456'
   }
 ]
-// Datos de prueba con proyectos inventados a partir de los usuarios (perfiles) anteriores
+
 export const proyectos = [
   {
     id: 1,
@@ -68,7 +68,7 @@ export const proyectos = [
     user_id: '36f66b5e-aa59-4f96-b6a8-3c890d6a452c',
     nombre: 'Salto Espacial',
     descripcion: 'Juego de plataforma espacial con saltos emocionantes',
-    imagen: 'imagen1.jpg',
+    imagen: 'https://previews.123rf.comimages/kenbenner/kenbenner1612/kenbenner161200002/69006439-ilustraci%C3%B3n-de-dibujos-animados-de-una-nave-espacial.jpg',
     enlace: 'https://salto-espacial.com',
     repositorio: 'https://github.com/usuario/salto-espacial',
     estado: 'En desarrollo',
@@ -81,7 +81,7 @@ export const proyectos = [
     user_id: 'a3df05b0-91e7-4f68-a067-841fcf5de9f0',
     nombre: 'Carrera Loca',
     descripcion: 'Juego de carreras con obstáculos y power-ups',
-    imagen: 'imagen2.jpg',
+    imagen: 'https://w7.pngwing.com/pngs/955/140/png-transparent-cartoon-drawing-car-cartoon-compact-car-comics-car.png',
     enlace: 'https://carrera-loca.com',
     repositorio: 'https://github.com/usuario/carrera-loca',
     estado: 'En desarrollo',
@@ -94,7 +94,7 @@ export const proyectos = [
     user_id: 'd67e3b1c-875f-437f-bd2a-9ff50b72083d',
     nombre: 'Aventuras en la Selva',
     descripcion: 'Explora la selva en busca de tesoros y desafíos',
-    imagen: 'imagen3.jpg',
+    imagen: 'https://babeldelibros.com/wp-content/uploads/2022/05/CIPES1-600x600-1.jpeg',
     enlace: 'https://aventuras-en-la-selva.com',
     repositorio: 'https://github.com/usuario/aventuras-en-la-selva',
     estado: 'En desarrollo',
@@ -107,7 +107,7 @@ export const proyectos = [
     user_id: '36f66b5e-aa59-4f96-b6a8-3c890d6a452c',
     nombre: 'Rompecabezas Divertido',
     descripcion: 'Resuelve rompecabezas desafiantes con imágenes divertidas',
-    imagen: 'imagen4.jpg',
+    imagen: 'https://fs-prod-cdn.nintendo-europe.com/mediaimages/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_FunnyFarmAnimalJigsawPuzzleGameForKidsAndToddlers_image1600w.jpg',
     enlace: 'https://rompecabezas-divertido.com',
     repositorio: 'https://github.com/usuario/rompecabezas-divertido',
     estado: 'En desarrollo',
@@ -120,7 +120,7 @@ export const proyectos = [
     user_id: 'a3df05b0-91e7-4f68-a067-841fcf5de9f0',
     nombre: 'Defensor Espacial',
     descripcion: 'Protege la galaxia de invasores alienígenas en este juego arcade',
-    imagen: 'imagen5.jpg',
+    imagen: 'https://thumbs.dreamstime.com/b/astronauta-spaceman-dispara-arma-de-burbuja-hombre-vestido-defensor-espacial-o-explorador-en-la-fiesta-disfraces-conjunto-255585765.jpg',
     enlace: 'https://defensor-espacial.com',
     repositorio: 'https://github.com/usuario/defensor-espacial',
     estado: 'En desarrollo',

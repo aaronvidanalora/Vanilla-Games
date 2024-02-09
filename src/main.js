@@ -33,3 +33,11 @@ window.location = '#/home'
 // Inyectamos el componente header
 document.querySelector('header').innerHTML = header.template
 header.script()
+
+console.log('PRUEBAS SUPABASE')
+
+const supabaseUrl = 'https://dlgnhtzgdglnnizsjixp.supabase.co'
+const supabaseKey = process.env.SUPABASE_KEY
+const supabase = createClient(supabaseUrl, supabaseKey)
+
+console.log('conexion', supabase)
