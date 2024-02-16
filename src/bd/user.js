@@ -63,15 +63,17 @@ export class User {
   }
 
   // Método para actualizar datos del usuario (no está claro cómo se utiliza actualmente)
-  async update (nuevosDatos) {
-    // eslint-disable-next-line no-unused-vars
+  static async update (nuevosDatos) {
     const { data, error } = await supabase.auth.updateUser({
-      email: this.email,
-      password: this.password
+      email: nuevosDatos.email
+      // password: nuevosDatos.password,
+      // data: { hello: 'world' }
     })
 
     if (error) {
       throw new Error(error.message)
     }
+
+    return true
   }
 }

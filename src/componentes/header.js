@@ -54,9 +54,6 @@ export const header = {
   script: () => {
     console.log('Header cargado')
     // Cargamos la ventana modal para editar perfil
-    // Simulamos el inicio de sesión de un usuario
-    ls.setUsuario({ email: 'chafardera@gmial.com', rol: 'admin' })
-
     document.querySelector('#modal').innerHTML = editarPerfil.template
     // Y ejecutamos su lógica
     editarPerfil.script()
