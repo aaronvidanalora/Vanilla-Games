@@ -1,5 +1,6 @@
 import { proyectos } from '../bd/datosPrueba'
 import { ls } from '../componentes/funciones'
+import { Proyecto } from '../bd/proyecto'
 
 export default {
   template: // html
